@@ -3,16 +3,16 @@ package com.seatsync;
 import com.seatsync.dao.EventDAO;
 import com.seatsync.dao.SeatDAO;
 import com.seatsync.model.Event;
+import com.seatsync.ui.MainMenu;
 
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Main {
-    public static void main(String[] args){
-        System.out.println("======================================");
-        System.out.println("\t\tWelcome to SeatSync");
-        System.out.println("\tSmart Ticket Reservation System");
-        System.out.println("======================================");
+    public static void main(String[] args) throws SQLException {
+        MainMenu menu = new MainMenu();
+        menu.start();
 
         Event event = new Event();
         event.setEvent_name("Tech fest 2026");

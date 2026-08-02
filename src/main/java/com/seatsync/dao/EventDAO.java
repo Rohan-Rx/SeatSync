@@ -44,6 +44,7 @@ public class EventDAO {
                         rs.getDouble("ticket_price"),
                         rs.getInt("total_seats")
                 );
+                events.add(event);
             }
 
 

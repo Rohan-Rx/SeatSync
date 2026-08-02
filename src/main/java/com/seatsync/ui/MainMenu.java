@@ -25,10 +25,12 @@ public class MainMenu {
                     menu.login();
                     break;
                 case 2:
-                    System.out.println("User Comming soon");
+                    UserMenu usermenu = new UserMenu();
+                    usermenu.login();
                     break;
                 case 3:
-                    System.out.println("User Registration Comming soon");
+                    usermenu = new UserMenu();
+                    usermenu.registerUser();
                     break;
                 case 4:
                     System.out.println("Thank you for Choosing Seat Sync");

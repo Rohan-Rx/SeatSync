@@ -2,18 +2,18 @@ package com.seatsync.model;
 
 import java.sql.Timestamp;
 
-public class user {
+public class User {
     private int user_id;
     private String name;
     private String email;
-    private int phone;
+    private String phone;
     private String password;
     private Timestamp created_at;
 
-    public user() {
+    public User() {
     }
     //Constructor without userId and created_at (used while registration)
-    public user(String name, String email, int phone, String password) {
+    public User(String name, String email, String phone, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
@@ -21,7 +21,7 @@ public class user {
     }
     //Constructor with all fields (used while retriving data)
 
-    public user(int user_id, String name, String email, int phone, String password, Timestamp created_at) {
+    public User(int user_id, String name, String email, String phone, String password, Timestamp created_at) {
         this.user_id = user_id;
         this.name = name;
         this.email = email;
@@ -54,11 +54,11 @@ public class user {
         this.email = email;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 

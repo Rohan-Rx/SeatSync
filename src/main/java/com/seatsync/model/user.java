@@ -7,21 +7,21 @@ public class user {
     private String name;
     private String email;
     private int phone;
-    private int password;
+    private String password;
     private Timestamp created_at;
 
     public user() {
     }
     //Constructor without userId and created_at (used while registration)
-    public user(String name, String email, int phone, int password) {
+    public user(String name, String email, int phone, String password) {
         this.name = name;
         this.email = email;
         this.phone = phone;
-        this.password = password;
+        this.password=password;
     }
     //Constructor with all fields (used while retriving data)
 
-    public user(int user_id, String name, String email, int phone, int password, Timestamp created_at) {
+    public user(int user_id, String name, String email, int phone, String password, Timestamp created_at) {
         this.user_id = user_id;
         this.name = name;
         this.email = email;
@@ -62,11 +62,11 @@ public class user {
         this.phone = phone;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
 

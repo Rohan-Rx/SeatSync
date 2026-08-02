@@ -16,6 +16,15 @@ public class Event {
     public Event() {
     }
 
+    public Event(int event_id, String event_name, LocalDate event_date, LocalTime event_time, double ticket_price, int total_seats) {
+        this.event_id = event_id;
+        this.event_name = event_name;
+        this.event_date = event_date;
+        this.event_time = event_time;
+        this.ticket_price = ticket_price;
+        this.total_seats = total_seats;
+    }
+
     public Event(int event_id, String event_name, String venue, LocalDate event_date, LocalTime event_time, double ticket_price, int total_seats) {
         this.event_id = event_id;
         this.event_name = event_name;
